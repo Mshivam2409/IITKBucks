@@ -1,0 +1,6 @@
+docker-compose.dev.yml linguist-language=Dockerfile
+docker-compose.prod.yml linguist-language=Dockerfile
+docker-compose.test.yml linguist-language=Dockerfile
+*.css linguist-detectable=false
+*.scss linguist-detectable=false
+# I never wanted it to look like a css project:)))

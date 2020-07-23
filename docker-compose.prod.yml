@@ -1,0 +1,41 @@
+version: "3"
+services:
+  server:
+    container_name: server
+    restart: always
+    build:
+      context: ./backend
+      dockerfile: prod.Dockerfile
+    volumes:
+      - ./backend:/server
+    working_dir: /server
+    ports:
+      - "3492:3492"
+    networks:
+      - app-network
+    command: yarn start
+  client:
+    container_name: client
+    restart: always
+    build:
+      context: ./backend
+      dockerfile: prod.Dockerfile
+    volumes:
+      - ./frontend:/client
+    working_dir: /client
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+    stdin_open: true
+    command: yarn run start
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  data-volume:
+  node_modules:
+  web-root:
+    driver: local
