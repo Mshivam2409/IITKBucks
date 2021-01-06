@@ -18,7 +18,7 @@
     "@types/express": "^4.17.7",
     "@types/node": "^14.0.22",
     "@types/node-rsa": "^1.0.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bignum": "^0.13.1",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
