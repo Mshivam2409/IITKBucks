@@ -19,7 +19,7 @@
     "react-router-dom": "5.1.2",
     "react-scripts": "3.4.0",
     "reactstrap": "8.4.1",
-    "three": "^0.118.3",
+    "three": "^0.125.0",
     "vanta": "^0.5.16"
   },
   "scripts": {
