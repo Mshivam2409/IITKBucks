@@ -5,7 +5,7 @@
   "proxy": "http://localhost:3492",
   "dependencies": {
     "@types/react": "16.9.23",
-    "chart.js": "2.9.3",
+    "chart.js": "2.9.4",
     "classnames": "2.2.6",
     "history": "4.10.1",
     "node-sass": "4.13.1",
